@@ -4,6 +4,7 @@ const CreateEmployeeController = async (req, res) => {
   if (!req.body.name || !req.body.email) {
     return res.status(400).json({ message: "Missing fields" });
   }
+
   const emailAlreadyExists = await employeeServices.emailExists(req.body.email);
   if (emailAlreadyExists) {
     return res.status(400).json({ message: "email already exists. Duplicate email" });

@@ -1,0 +1,51 @@
+name,email,role,isActive,departmentId
+John Doe,john.doe@example.com,Developer,true,6866004346f6a3fc2887b18e
+Jane Smith,jane.smith@example.com,Manager,true,6866004346f6a3fc2887b18e
+Michael Johnson,michael.johnson@example.com,Analyst,false,6866004346f6a3fc2887b18e
+Emily Davis,emily.davis@example.com,Designer,true,6866004346f6a3fc2887b18e
+Robert Wilson,robert.wilson@example.com,Developer,true,6866004346f6a3fc2887b18e
+Sarah Brown,sarah.brown@example.com,HR Specialist,true,6866004346f6a3fc2887b18e
+David Taylor,david.taylor@example.com,Accountant,false,6866004346f6a3fc2887b18e
+Jennifer Martinez,jennifer.martinez@example.com,Marketing,true,6866004346f6a3fc2887b18e
+Thomas Anderson,thomas.anderson@example.com,Developer,true,6866004346f6a3fc2887b18e
+Lisa Thomas,lisa.thomas@example.com,Manager,false,6866004346f6a3fc2887b18e
+Daniel White,daniel.white@example.com,Analyst,true,6866004346f6a3fc2887b18e
+Patricia Harris,patricia.harris@example.com,Designer,true,6866004346f6a3fc2887b18e
+Christopher Martin,christopher.martin@example.com,Developer,false,6866004346f6a3fc2887b18e
+Jessica Garcia,jessica.garcia@example.com,HR Specialist,true,6866004346f6a3fc2887b18e
+Matthew Robinson,matthew.robinson@example.com,Accountant,true,6866004346f6a3fc2887b18e
+Amanda Clark,amanda.clark@example.com,Marketing,false,6866004346f6a3fc2887b18e
+Andrew Rodriguez,andrew.rodriguez@example.com,Developer,true,6866004346f6a3fc2887b18e
+Nicole Lewis,nicole.lewis@example.com,Manager,true,6866004346f6a3fc2887b18e
+Kevin Lee,kevin.lee@example.com,Analyst,false,6866004346f6a3fc2887b18e
+Stephanie Walker,stephanie.walker@example.com,Designer,true,6866004346f6a3fc2887b18e
+Brian Hall,brian.hall@example.com,Developer,true,6866004346f6a3fc2887b18e
+Rachel Young,rachel.young@example.com,HR Specialist,false,6866004346f6a3fc2887b18e
+Joshua Allen,joshua.allen@example.com,Accountant,true,6866004346f6a3fc2887b18e
+Megan King,megan.king@example.com,Marketing,true,6866004346f6a3fc2887b18e
+Ryan Wright,ryan.wright@example.com,Developer,false,6866004346f6a3fc2887b18e
+Lauren Scott,lauren.scott@example.com,Manager,true,6866004346f6a3fc2887b18e
+Jason Green,jason.green@example.com,Analyst,true,6866004346f6a3fc2887b18e
+Hannah Adams,hannah.adams@example.com,Designer,false,6866004346f6a3fc2887b18e
+Eric Baker,eric.baker@example.com,Developer,true,6866004346f6a3fc2887b18e
+Olivia Nelson,olivia.nelson@example.com,HR Specialist,true,6866004346f6a3fc2887b18e
+Steven Carter,steven.carter@example.com,Accountant,false,6866004346f6a3fc2887b18e
+Ashley Mitchell,ashley.mitchell@example.com,Marketing,true,6866004346f6a3fc2887b18e
+Timothy Perez,timothy.perez@example.com,Developer,true,6866004346f6a3fc2887b18e
+Samantha Roberts,samantha.roberts@example.com,Manager,false,6866004346f6a3fc2887b18e
+Brandon Turner,brandon.turner@example.com,Analyst,true,6866004346f6a3fc2887b18e
+Elizabeth Phillips,elizabeth.phillips@example.com,Designer,true,6866004346f6a3fc2887b18e
+Alexander Campbell,alexander.campbell@example.com,Developer,false,6866004346f6a3fc2887b18e
+Megan Parker,megan.parker@example.com,HR Specialist,true,6866004346f6a3fc2887b18e
+Nathan Evans,nathan.evans@example.com,Accountant,true,6866004346f6a3fc2887b18e
+Victoria Edwards,victoria.edwards@example.com,Marketing,false,6866004346f6a3fc2887b18e
+Justin Collins,justin.collins@example.com,Developer,true,6866004346f6a3fc2887b18e
+Brittany Stewart,brittany.stewart@example.com,Manager,true,6866004346f6a3fc2887b18e
+Kyle Sanchez,kyle.sanchez@example.com,Analyst,false,6866004346f6a3fc2887b18e
+Natalie Morris,natalie.morris@example.com,Designer,true,6866004346f6a3fc2887b18e
+Jonathan Rogers,jonathan.rogers@example.com,Developer,true,6866004346f6a3fc2887b18e
+Christina Reed,christina.reed@example.com,HR Specialist,false,6866004346f6a3fc2887b18e
+Scott Cook,scott.cook@example.com,Accountant,true,6866004346f6a3fc2887b18e
+Danielle Morgan,danielle.morgan@example.com,Marketing,true,6866004346f6a3fc2887b18e
+Gregory Bell,gregory.bell@example.com,Developer,false,6866004346f6a3fc2887b18e
+Kayla Murphy,kayla.murphy@example.com,Manager,true,6866004346f6a3fc2887b18e
