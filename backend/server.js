@@ -4,6 +4,7 @@ const csv = require("csv-parser");
 const fs = require("fs");
 const path = require("path");
 const Employee = require("./models/Employees");
+require("dotenv").config();
 
 const app = express();
 
@@ -25,9 +26,9 @@ app.use(logger);
 
 const employeeRoutes = require("./routes/employeeRoutes");
 const departmentRoutes = require("./routes/departmentRoutes");
-const authRoutes = require("./routes/authRoutes")
+const authRoutes = require("./routes/authRoutes");
 
-app.use('/api/auth', authRoutes)
+app.use("/api/auth", authRoutes);
 app.use("/api/employees", employeeRoutes);
 app.use("/api/departments", departmentRoutes);
 
