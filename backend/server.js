@@ -24,12 +24,14 @@ app.use(logger);
 // const validation = require("./middleware/validateEmployee");
 // app.use(validation);
 
+const auth = require("./middleware/auth");
+
 const employeeRoutes = require("./routes/employeeRoutes");
 const departmentRoutes = require("./routes/departmentRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 app.use("/api/auth", authRoutes);
-app.use("/api/employees", employeeRoutes);
+app.use("/api/employees", auth, employeeRoutes);
 app.use("/api/departments", departmentRoutes);
 
 const PORT = 5000;

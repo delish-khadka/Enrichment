@@ -3,17 +3,17 @@ const router = express.Router();
 const employeeControllers = require("../controllers/employeeController");
 
 const validation = require("../middleware/validateEmployee");
-const auth = require("../middleware/auth");
+const roleAccess = require("../middleware/role");
 
 // GET all
-router.get("/", auth, employeeControllers.GetAllEmployeeController);
+router.get("/", employeeControllers.GetAllEmployeeController);
 // GET by ID
-router.get("/:id", auth, employeeControllers.GetEmployeeByIdController);
+router.get("/:id", employeeControllers.GetEmployeeByIdController);
 // POST new employee
-router.post("/", validation, employeeControllers.CreateEmployeeController);
+router.post("/", roleAccess("admin"), validation, employeeControllers.CreateEmployeeController);
 // UPDATE existing employee
-router.put("/:id", employeeControllers.UpdateEmployeeController);
+router.put("/:id", roleAccess("admin", "manager"), employeeControllers.UpdateEmployeeController);
 // DELETE existing employee
-router.delete("/:id", employeeControllers.DeleteEmployeeController);
+router.delete("/:id", roleAccess("admin"), employeeControllers.DeleteEmployeeController);
 
 module.exports = router;
