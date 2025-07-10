@@ -31,7 +31,7 @@ const loginUser = async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email }).select("+password");
 
-  console.log(user);
+  // console.log(user);
   if (!user) return res.status(404).json({ message: "User not found" });
 
   const isMatch = await bcrypt.compare(password, user.password);
@@ -50,4 +50,16 @@ const loginUser = async (req, res) => {
   });
 };
 
-module.exports = { loginUser, registerUser };
+// GET /api/auth/me
+const getCurrentUser = async (req, res) => {
+  const user = await User.findById(req.user.userId)
+    .populate("employeeId", "name departmentId")
+    .select("-password");
+
+  if (!user) return res.status(404).json({ message: "User not found" });
+
+  res.json({ success: true, user });
+};
+
+
+module.exports = { loginUser, registerUser, getCurrentUser };

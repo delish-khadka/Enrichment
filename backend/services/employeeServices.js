@@ -59,6 +59,12 @@ const CreateEmployeeService = async (newUserData) => {
   };
 };
 
+// const CreateEmployeeService = async (newUserData) => {
+//     const newUser = new employees(newUserData);
+//     await newUser.save();
+//     return newUser;
+// }
+
 const GetAllEmployeeService = async () => {
   //   const allEmployee = await Employee.find();
   //   return allEmployee;]
