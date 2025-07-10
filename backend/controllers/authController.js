@@ -52,14 +52,15 @@ const loginUser = async (req, res) => {
 
 // GET /api/auth/me
 const getCurrentUser = async (req, res) => {
-  const user = await User.findById(req.user.userId)
-    .populate("employeeId", "name departmentId")
-    .select("-password");
+  try {
+    const user = await User.findById(req.user.userId).populate("employeeId", "name departmentId").select("-password");
 
-  if (!user) return res.status(404).json({ message: "User not found" });
+    if (!user) return res.status(404).json({ message: "User not found" });
 
-  res.json({ success: true, user });
+    res.json({ success: true, user });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
 };
-
 
 module.exports = { loginUser, registerUser, getCurrentUser };

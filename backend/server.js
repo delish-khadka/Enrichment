@@ -20,6 +20,7 @@ mongoose
 
 const logger = require("./middleware/logger");
 app.use(logger);
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // const validation = require("./middleware/validateEmployee");
 // app.use(validation);

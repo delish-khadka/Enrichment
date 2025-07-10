@@ -6,6 +6,10 @@ const employees = new mongoose.Schema({
   role: String,
   isActive: { type: Boolean, default: false },
   departmentId: { type: mongoose.Schema.Types.ObjectId, ref: "Department" },
+  profileImage: {
+    type: String, // store image filename or path
+    default: null,
+  },
 });
 
 module.exports = mongoose.model("Employee", employees);
