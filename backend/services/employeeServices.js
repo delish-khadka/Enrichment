@@ -2,6 +2,7 @@ const Employee = require("../models/Employees");
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const generateTempPassword = require("../utils/generateTempPassword");
+const sendLoginCredentials = require("../utils/mailer");
 
 const CreateEmployeeService = async (newUserData) => {
   let newEmployee;
@@ -38,6 +39,8 @@ const CreateEmployeeService = async (newUserData) => {
     console.log("Creating user...");
     await newUser.save();
     console.log("User created successfully.");
+    console.log("sending email to user");
+    await sendLoginCredentials(newUser.email, tempPassword);
   } catch (err) {
     console.error("Failed to create user:", err.message);
 
